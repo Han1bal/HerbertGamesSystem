@@ -1,0 +1,84 @@
+Random rnd = new Random();
+int randIndex = rnd.Next(numbers.Count);            
+int random = numbers[randIndex];
+double vareee = Convert.ToChar(random);
+
+  
+Console.WriteLine("Schere,Stein oder Papier?");
+Console.WriteLine(".1.Schere .2.Papier .3.Stein");
+var ee1 = Console.ReadLine();
+int Eingabe = (int)Convert.ToChar(ee1);
+
+if (Eingabe = 2)
+{
+    if (vareee < Eingabe)
+    {
+        Console.WriteLine("Du verlierst denn Schere schlägt Papier");
+
+    }
+
+    if (vareee > Eingabe)
+    {
+        Console.WriteLine("Du gewinnst denn Papier schlägt Stein ");
+    }
+    if (vareee == 2)
+    {
+        Console.WriteLine("Schade ein Unentschieden !");
+    }
+}
+
+if (Eingabe == 3)
+{
+    if (vareee == 2)
+    {
+        Console.WriteLine("Du verlierst denn Papier schlägt Stein.");    
+    }
+
+    if (vareee == 1)
+    {
+        Console.WriteLine("Du gewinnst denn Stein schlägt Schere.");
+
+    }
+    if (vareee == 3)
+    {
+        Console.WriteLine("Schade ein Unentschieden !");
+    }
+}
+if (Eingabe == 1)
+{
+    if (vareee == 2)
+    {
+        Console.WriteLine("Du gewinnst den Schere schlägt Papier");
+    }
+    if(vareee == 3)
+    {
+        Console.WriteLine("Du verlierst den Stein schlägt Schere");
+    }
+    if(vareee ==1)
+    {
+        Console.WriteLine("Schade ein Unentschieden !");
+
+    }
+}
+
+/*
+if (vareee < 2)
+{
+    Console.WriteLine("Stein.");
+}
+else
+{
+    Console.WriteLine();
+    
+
+}
+if (vareee > 2)
+{
+    Console.WriteLine("Papier.");
+}
+else
+{
+    Console.WriteLine("Schere");
+
+}
+*/
